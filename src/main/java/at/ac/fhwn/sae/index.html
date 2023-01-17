@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div id="map" style="position: absolute; top: 0; left: 0; height: 100%; width: 100%;"></div>
+<script>
+
+    var map;
+    function showMap() {
+        var mapOptions = {
+            center:new google.maps.LatLng(47.6964719, 13.3457347),
+            zoom: 10,
+            mapTypeId: google.maps.MapTypeId.HYBRID
+        }
+        map = new google.maps.Map(document.getElementById("map"), mapOptions);
+    }
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmdezrpVM9uiTgn4V9keqlxYjmOz0TyyM&callback=showMap"></script>
+
+</body>
+</html>
